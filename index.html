@@ -1,23 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Saron's and Meklit's Hearth</title>
-    <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sunbeam — Perfect Day</title>
+  <!-- Link to styles.css at repo root -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <main>
-        <div class="center-container content">
-            <h1 class="title">
-                Welcome to Saron's and Meklit's Hearth
-            </h1>
-            <button id="enter-btn" class="center-button">Enter</button>
-        </div>
-    </main>
-    <footer></footer>
+  <header></header>
 
-    <script src="script.js"></script>
+  <main class="page">
+    <h1 class="site-title">Sunbeam — Perfect Day</h1>
+
+    <!-- Enter control (styled as a button) -->
+    <a class="enter-btn" href="room.html" aria-label="Enter the room">Enter</a>
+
+    <!-- Bookshelf -->
+    <section class="bookshelf" aria-label="Bookshelf">
+      <div class="shelf">
+        <!-- Example books: change the text or add image covers as needed -->
+        <div class="book" style="--i:0"><div class="cover">Dawn</div></div>
+        <div class="book" style="--i:1"><div class="cover">Noon</div></div>
+        <div class="book" style="--i:2"><div class="cover">Dusk</div></div>
+        <div class="book" style="--i:3"><div class="cover">Night</div></div>
+        <div class="book" style="--i:4"><div class="cover">Dreams</div></div>
+        <div class="book" style="--i:5"><div class="cover">Memory</div></div>
+        <div class="book" style="--i:6"><div class="cover">Song</div></div>
+        <div class="book" style="--i:7"><div class="cover">Light</div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer></footer>
+
+  <script src="./script.js"></script>
 </body>
 </html>
