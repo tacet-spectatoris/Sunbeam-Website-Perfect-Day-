@@ -1,61 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>The Hearth Room</title>
-    <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Hearth Room — Sunbeam</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <main class="room-container">
-        <div class="room-card">
-            <h1 class="title">The Hearth Room</h1>
-            
-            <div class="pixel-divider"></div>
-            
-            <p class="description">
-                Welcome inside! Pull up a chair by the warm pixel fire. Inspect the bookshelf below to explore Saron's & Meklit's collection of secrets.
-            </p>
-            
-            <div class="pixel-divider"></div>
+  <header></header>
 
-            <!-- Bookshelf Section -->
-            <div id="bookshelf" class="bookshelf">
-                <div class="bookshelf-header">
-                    <span class="tiny-icon">🔥</span>
-                    <h2>Grand Bookshelf</h2>
-                    <span class="tiny-icon">🔥</span>
-                </div>
-                
-                <!-- Fake Books Grid -->
-                <div class="books-grid">
-                    <div class="book-item" data-book="Saron's Secret Recipe Book">
-                        <span class="book-icon">📕</span>
-                        <span class="book-title">Saron's Recipes</span>
-                    </div>
-                    <div class="book-item" data-book="Meklit's Adventure Journal">
-                        <span class="book-icon">📗</span>
-                        <span class="book-title">Meklit's Journal</span>
-                    </div>
-                    <div class="book-item" data-book="Tome of Fire Magic">
-                        <span class="book-icon">📘</span>
-                        <span class="book-title">Fire Magic</span>
-                    </div>
-                    <div class="book-item" data-book="Ancient Hearth Lore">
-                        <span class="book-icon">📙</span>
-                        <span class="book-title">Hearth Lore</span>
-                    </div>
-                </div>
-            </div>
+  <main class="page">
+    <h1 class="site-title">The Hearth Room</h1>
 
-            <!-- Display box for clicked books -->
-            <div id="book-info" class="book-info-box">Select a book to read...</div>
+    <!-- Back control (styled like the Enter button on the homepage) -->
+    <a class="enter-btn" href="index.html" aria-label="Back to main gate">← Back to Main Gate</a>
 
-            <button id="back-btn" class="center-button back-btn">← Back to Main Gate</button>
-        </div>
-    </main>
+    <!-- Bookshelf (uses the same .bookshelf/.shelf/.book structure from index.html) -->
+    <section class="bookshelf" aria-label="Grand Bookshelf">
+      <div class="shelf">
+        <div class="book" style="--i:0"><div class="cover">Saron's Recipes</div></div>
+        <div class="book" style="--i:1"><div class="cover">Meklit's Journal</div></div>
+        <div class="book" style="--i:2"><div class="cover">Tome of Fire Magic</div></div>
+        <div class="book" style="--i:3"><div class="cover">Ancient Hearth Lore</div></div>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- Short description (keeps the original copy) -->
+    <p class="description" style="max-width:760px; text-align:center; margin-top:22px;">
+      Welcome inside! Pull up a chair by the warm pixel fire. Inspect the bookshelf above to explore Saron's &amp; Meklit's collection of secrets.
+    </p>
+  </main>
+
+  <footer></footer>
+
+  <script src="./script.js"></script>
 </body>
 </html>
