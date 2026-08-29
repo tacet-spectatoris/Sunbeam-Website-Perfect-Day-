@@ -15,9 +15,11 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Centering wrappers */
+/* Page Centering Wrappers */
 main, .center-container, .room-container {
     flex: 1;
     display: flex;
@@ -26,63 +28,76 @@ main, .center-container, .room-container {
     justify-content: center;
     text-align: center;
     width: 100%;
-    padding: 20px;
+    padding: 30px;
 }
 
-/* Room Container Card */
+/* Expanded Card Container */
 .room-card {
-    background-color: rgba(20, 15, 10, 0.88);
-    border: 4px solid #000000;
-    box-shadow: 6px 6px 0px #000000;
-    padding: 30px;
-    max-width: 800px;
+    background-color: rgba(20, 15, 10, 0.90);
+    border: 5px solid #000000;
+    box-shadow: 8px 8px 0px #000000;
+    padding: 45px;
+    max-width: 950px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
+/* Main Titles */
 .title {
-    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 3rem;
     line-height: 1.4;
     text-align: center;
-    margin: 0 0 10px 0;
+    margin: 0 0 15px 0;
     color: #ffff55;
-    text-shadow: 4px 4px 0px #000000;
+    text-shadow: 5px 5px 0px #000000;
 }
 
-/* Pixel Line Dividers */
+.title-icon {
+    font-size: 2.8rem;
+    text-shadow: none;
+}
+
+/* Thick Pixel Divider */
 .pixel-divider {
     width: 100%;
-    height: 4px;
+    height: 6px;
     background-color: #555555;
-    border-top: 2px solid #aaaaaa;
-    border-bottom: 2px solid #000000;
-    margin: 15px 0;
+    border-top: 3px solid #aaaaaa;
+    border-bottom: 3px solid #000000;
+    margin: 25px 0;
 }
 
+/* Subtitles & Descriptions */
 .description {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 1.35rem;
+    line-height: 1.7;
     color: #e0e0e0;
     text-shadow: 2px 2px 0px #000000;
     margin: 10px 0;
+    max-width: 800px;
 }
 
-/* Minecraft Button */
+/* Larger Pixel Button */
 .center-button {
     background-color: #707070;
     color: #ffffff;
-    border: 4px solid #000000;
-    padding: 12px 24px;
-    font-size: 1rem;
+    border: 5px solid #000000;
+    padding: 18px 36px;
+    font-size: 1.4rem;
     cursor: pointer;
     text-shadow: 2px 2px 0px #000000;
     box-shadow: 
-        inset -4px -4px 0px 0px #3c3c3c,
-        inset 4px 4px 0px 0px #a8a8a8,
-        4px 4px 0px 0px #000000;
-    margin-top: 20px;
+        inset -5px -5px 0px 0px #3c3c3c,
+        inset 5px 5px 0px 0px #a8a8a8,
+        5px 5px 0px 0px #000000;
+    margin-top: 25px;
 }
 
 .center-button:hover {
@@ -91,35 +106,34 @@ main, .center-container, .room-container {
 }
 
 .center-button:active {
-    transform: translate(2px, 2px);
+    transform: translate(3px, 3px);
     box-shadow: 
-        inset 4px 4px 0px 0px #3c3c3c,
-        inset -4px -4px 0px 0px #a8a8a8,
+        inset 5px 5px 0px 0px #3c3c3c,
+        inset -5px -5px 0px 0px #a8a8a8,
         2px 2px 0px 0px #000000;
 }
 
 /* Bookshelf Container */
 .bookshelf {
     background-color: #3b2312;
-    border: 4px solid #000000;
-    padding: 20px;
+    border: 5px solid #000000;
+    padding: 30px;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 15px;
     box-shadow: 
-        inset -4px -4px 0px 0px #1f1209,
-        inset 4px 4px 0px 0px #5c381d,
-        4px 4px 0px 0px #000000;
+        inset -5px -5px 0px 0px #1f1209,
+        inset 5px 5px 0px 0px #5c381d,
+        5px 5px 0px 0px #000000;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Entire bookshelf glow when hovering over the bookshelf area */
 .bookshelf:hover {
     border-color: #ffff55;
     box-shadow: 
-        0 0 20px #ffff55,
-        inset -4px -4px 0px 0px #1f1209,
-        inset 4px 4px 0px 0px #5c381d,
-        4px 4px 0px 0px #000000;
+        0 0 30px #ffff55,
+        inset -5px -5px 0px 0px #1f1209,
+        inset 5px 5px 0px 0px #5c381d,
+        5px 5px 0px 0px #000000;
 }
 
 .bookshelf-header {
@@ -127,64 +141,66 @@ main, .center-container, .room-container {
     align-items: center;
     justify-content: center;
     gap: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .bookshelf-header h2 {
     margin: 0;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     color: #ffaa00;
-    text-shadow: 2px 2px 0px #000000;
+    text-shadow: 3px 3px 0px #000000;
 }
 
 .tiny-icon {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
-/* Grid of Fake Books */
+/* Fake Books Grid Layout */
 .books-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 20px;
 }
 
-/* Individual Fake Book Styling */
+/* Individual Fake Books */
 .book-item {
     background-color: #2a180b;
-    border: 3px solid #000000;
-    padding: 15px 10px;
+    border: 4px solid #000000;
+    padding: 22px 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     cursor: pointer;
     transition: transform 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
 }
 
 .book-icon {
-    font-size: 2.2rem;
-    margin-bottom: 8px;
+    font-size: 3.2rem;
+    margin-bottom: 12px;
 }
 
 .book-title {
-    font-size: 0.85rem;
+    font-size: 1.05rem;
     color: #ffffff;
-    text-shadow: 1px 1px 0px #000000;
+    text-shadow: 2px 2px 0px #000000;
 }
 
-/* Highlight specific book when hovered */
 .book-item:hover {
     border-color: #ffff55;
     background-color: #4a2d17;
-    transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 0 10px #ffff55;
+    transform: translateY(-6px) scale(1.06);
+    box-shadow: 0 0 15px #ffff55;
 }
 
+/* Active Book Info Text Box */
 .book-info-box {
-    margin-top: 15px;
+    margin-top: 25px;
     background-color: #000000;
-    border: 2px solid #ffff55;
-    padding: 10px 15px;
+    border: 3px solid #ffff55;
+    padding: 16px 24px;
     width: 100%;
-    font-size: 0.9rem;
+    font-size: 1.25rem;
     color: #ffffa0;
+    text-align: center;
 }
