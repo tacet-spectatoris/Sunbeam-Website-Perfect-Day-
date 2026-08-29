@@ -1,67 +1,106 @@
 * {
-    font-family: sans-serif;
+    font-family: 'Minecraft', sans-serif;
+    box-sizing: border-box;
 }
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-}
+
 body {
     margin: 0;
     padding: 0;
     color: white;
-    background-image: url('maxresdefault%20(1).jpg');
+    /* Uses ../ to move out of the css/ folder to find your exact image */
+    background-image: url('../maxresdefault%20(1).jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-h1 {
-    font-size:60px;
-    margin:0;
-    margin-top: 60px;
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-h2 {
-    font-style:italic;
-    font-weight: 500
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
 }
+
 .title {
-  font-size: 2rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-  color: #ffff55; /* Minecraft gold yellow */
-  text-shadow: 4px 4px 0px #000000;
-  max-width: 800px;
-  padding: 0 20px;
-  letter-spacing: 1px;
+    font-size: 2.5rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+    color: #ffff55; /* Minecraft gold yellow */
+    text-shadow: 4px 4px 0px #000000;
+    max-width: 800px;
+    letter-spacing: 1px;
 }
-img{
-    width:600px;
-    border-radius:20px;
+
+/* Pixel/Minecraft Button */
+.center-button {
+    background-color: #707070;
+    color: #ffffff;
+    border: 4px solid #000000;
+    padding: 14px 28px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-shadow: 2px 2px 0px #000000;
+    box-shadow: 
+        inset -4px -4px 0px 0px #3c3c3c,
+        inset 4px 4px 0px 0px #a8a8a8,
+        4px 4px 0px 0px #000000;
 }
-.center-container{
-  height: 200px;
-  position: relative;
-  border: 3px solid green; 
-}
-.center-button{
-  background-color: orange;
-  color:white;
-  border:2px solid orange;
-  padding: 10px 20px;
-  font-family: 'Minecraft', sans-serif;
-  font-size: 16px;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  cursor:pointer;
-}
+
 .center-button:hover {
-    background-color: orange;
-    border-color: yellow;
-    color: yellow;
+    background-color: #8b8b8b;
+    color: #ffffa0;
+}
+
+.center-button:active {
+    transform: translate(2px, 2px);
+    box-shadow: 
+        inset 4px 4px 0px 0px #3c3c3c,
+        inset -4px -4px 0px 0px #a8a8a8,
+        2px 2px 0px 0px #000000;
+}
+
+/* Bookshelf Layout & Hover Glow */
+.bookshelf {
+    background-color: rgba(40, 30, 20, 0.85);
+    border: 4px solid #000000;
+    padding: 30px 45px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px #000000;
+    transition: all 0.2s ease-in-out;
+}
+
+.bookshelf-icon {
+    font-size: 4rem;
+}
+
+.bookshelf p {
+    margin: 10px 0 0 0;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 0px #000000;
+}
+
+/* Highlight style on bookshelf hover */
+.bookshelf:hover {
+    border-color: #ffff55;
+    transform: scale(1.08);
+    box-shadow: 
+        0 0 25px #ffff55,
+        inset 0 0 10px rgba(255, 255, 85, 0.5),
+        4px 4px 0px #000000;
 }
