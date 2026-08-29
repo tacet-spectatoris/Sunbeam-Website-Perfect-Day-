@@ -38,7 +38,7 @@ img{
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-.custom-button:hover {
+.center-button:hover {
     border-color: yellow;
     color: yellow;
 }
