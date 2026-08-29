@@ -25,12 +25,15 @@ img{
     border-radius:20px;
 }
 .center-container{
-    display:flex;
-    justify-content: center;
-    align-items: center;
+  height: 200px;
+  position: relative;
+  border: 3px solid green; 
 }
 .center-button{
-    padding: 12px 24px;
-    font-size:16px;
-    cursor: pointer;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
