@@ -9,12 +9,50 @@
 </head>
 <body>
     <main class="room-container">
-        <h1 class="title">The Hearth Room</h1>
-        
-        <!-- Interactive Bookshelf -->
-        <div id="bookshelf" class="bookshelf">
-            <div class="bookshelf-icon">📚</div>
-            <p>Bookshelf</p>
+        <div class="room-card">
+            <h1 class="title">The Hearth Room</h1>
+            
+            <div class="pixel-divider"></div>
+            
+            <p class="description">
+                Welcome inside! Pull up a chair by the warm pixel fire. Inspect the bookshelf below to explore Saron's & Meklit's collection of secrets.
+            </p>
+            
+            <div class="pixel-divider"></div>
+
+            <!-- Bookshelf Section -->
+            <div id="bookshelf" class="bookshelf">
+                <div class="bookshelf-header">
+                    <span class="tiny-icon">🔥</span>
+                    <h2>Grand Bookshelf</h2>
+                    <span class="tiny-icon">🔥</span>
+                </div>
+                
+                <!-- Fake Books Grid -->
+                <div class="books-grid">
+                    <div class="book-item" data-book="Saron's Secret Recipe Book">
+                        <span class="book-icon">📕</span>
+                        <span class="book-title">Saron's Recipes</span>
+                    </div>
+                    <div class="book-item" data-book="Meklit's Adventure Journal">
+                        <span class="book-icon">📗</span>
+                        <span class="book-title">Meklit's Journal</span>
+                    </div>
+                    <div class="book-item" data-book="Tome of Fire Magic">
+                        <span class="book-icon">📘</span>
+                        <span class="book-title">Fire Magic</span>
+                    </div>
+                    <div class="book-item" data-book="Ancient Hearth Lore">
+                        <span class="book-icon">📙</span>
+                        <span class="book-title">Hearth Lore</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Display box for clicked books -->
+            <div id="book-info" class="book-info-box">Select a book to read...</div>
+
+            <button id="back-btn" class="center-button back-btn">← Back to Main Gate</button>
         </div>
     </main>
 
