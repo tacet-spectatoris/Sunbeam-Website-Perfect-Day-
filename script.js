@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Navigates from index.html to room.html on button click
+    // Navigation to room page
     const enterButton = document.getElementById('enter-btn');
     if (enterButton) {
         enterButton.addEventListener('click', () => {
@@ -7,11 +7,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Bookshelf click action in room.html
-    const bookshelf = document.getElementById('bookshelf');
-    if (bookshelf) {
-        bookshelf.addEventListener('click', () => {
-            alert("You opened the bookshelf!");
+    // Navigation back to index page
+    const backButton = document.getElementById('back-btn');
+    if (backButton) {
+        backButton.addEventListener('click', () => {
+            window.location.href = 'index.html';
         });
     }
+
+    // Interactive Fake Books Logic
+    const books = document.querySelectorAll('.book-item');
+    const bookInfo = document.getElementById('book-info');
+
+    books.forEach(book => {
+        book.addEventListener('click', () => {
+            const title = book.getAttribute('data-book');
+            if (bookInfo) {
+                bookInfo.textContent = `You opened: "${title}"!`;
+            }
+        });
+    });
 });
