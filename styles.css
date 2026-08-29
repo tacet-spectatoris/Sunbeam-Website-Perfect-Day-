@@ -18,7 +18,26 @@ body {
     align-items: center;
     justify-content: center;
 }
-
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    /* Warm deep red/ember fallback base */
+    background-color: #2b0e07; 
+    /* Warm fire glow overlay blended on top of your background image */
+    background-image: 
+        linear-gradient(rgba(75, 20, 5, 0.55), rgba(25, 8, 5, 0.75)), 
+        url('../maxresdefault%20(1).jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 /* Page Centering Wrappers */
 main, .center-container, .room-container {
     flex: 1;
