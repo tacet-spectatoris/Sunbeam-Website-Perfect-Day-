@@ -9,7 +9,12 @@ main {
 }
 body {
     background-color: cadetblue;
-    color: white
+    color: white;
+    background-image: url('maxresdefault.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 h1 {
     font-size:60px;
