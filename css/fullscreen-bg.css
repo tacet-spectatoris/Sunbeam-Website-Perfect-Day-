@@ -1,0 +1,41 @@
+/* css/fullscreen-bg.css
+   Ensures the image at the repository root named `maxresdefault (1).jpg`
+   fills the viewport with no whitespace and no repeating.
+
+   Usage:
+   - Link this CSS from an HTML file.
+   - If you move the image, update the `background-image` path accordingly.
+*/
+
+html, body {
+  height: 100%;
+  margin: 0; /* remove default page margins that cause white space */
+}
+
+/* Apply the background to the body (or replace `body` with a selector for a specific container) */
+body {
+  /* path is relative to this CSS file (css/). The image is at repository root, so use ../ */
+  background-image: url('../maxresdefault (1).jpg');
+
+  /* cover fills the area while preserving aspect ratio; it may crop edges */
+  background-size: cover;
+  background-position: center center; /* adjust focal point here */
+  background-repeat: no-repeat;       /* prevent tiling */
+
+  /* Keep element at least viewport height */
+  min-height: 100vh;
+
+  /* Optional: keeps the background fixed during scroll. Some mobile browsers
+     treat this poorly; remove if you see issues. */
+  /* background-attachment: fixed; */
+}
+
+/* Optional utility if you prefer a dedicated hero section instead of the whole body */
+.hero-fullscreen {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../maxresdefault (1).jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
