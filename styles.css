@@ -30,15 +30,21 @@ img{
   border: 3px solid green; 
 }
 .center-button{
-  background-color: #24292e; 
+  background-color: orange;
+  color:white;
+  border:2px solid orange;
+  padding: 10px 20px;
+  font-size: 16px;
   margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  cursor:pointer;
 }
 .center-button:hover {
+    background-color: orange;
     border-color: yellow;
     color: yellow;
 }
