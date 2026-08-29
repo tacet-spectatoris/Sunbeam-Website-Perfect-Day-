@@ -1,1 +1,4 @@
+function ClickHello(){
+    alert("hello");
+}
 
