@@ -26,6 +26,16 @@ h2 {
     font-style:italic;
     font-weight: 500
 }
+.title {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #ffff55; /* Minecraft gold yellow */
+  text-shadow: 4px 4px 0px #000000;
+  max-width: 800px;
+  padding: 0 20px;
+  letter-spacing: 1px;
+}
 img{
     width:600px;
     border-radius:20px;
@@ -40,6 +50,7 @@ img{
   color:white;
   border:2px solid orange;
   padding: 10px 20px;
+  font-family: 'Minecraft', sans-serif;
   font-size: 16px;
   margin: 0;
   position: absolute;
